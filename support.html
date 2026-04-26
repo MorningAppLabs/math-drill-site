@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Math Drill</title>
+  <meta name="description" content="Get help with Math Drill. Browse FAQs or contact our support team directly." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="icon.png" alt="Math Drill" style="width:36px;height:36px;border-radius:10px;object-fit:cover;flex-shrink:0;" />
+        Math Drill
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#pro">Pro</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+      <div class="navbar__right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ PAGE HERO ═══ -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="badge badge--green">Support</span>
+      <h1>How can we help?</h1>
+      <p>Find answers in our FAQ below, or send us an email. We read every message and respond within 2 business days.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════ QUICK HELP CARDS ═══ -->
+  <section class="section--tight">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:860px;margin:0 auto;">
+
+        <div class="feature-card fade-in" style="text-align:center;">
+          <span class="feature-card__icon">📧</span>
+          <h3 class="feature-card__title">Email Support</h3>
+          <p class="feature-card__desc">Send us a detailed message and we'll get back to you within 2 business days.</p>
+          <br/>
+          <a href="#contact" class="btn btn--outline" style="padding:10px 20px;font-size:14px;margin-top:auto;">Contact Us</a>
+        </div>
+
+        <div class="feature-card fade-in" style="text-align:center;">
+          <span class="feature-card__icon">🔄</span>
+          <h3 class="feature-card__title">Restore Purchase</h3>
+          <p class="feature-card__desc">Bought Pro on another device or reinstalled the app? Restore it for free.</p>
+          <br/>
+          <a href="#restore" class="btn btn--outline" style="padding:10px 20px;font-size:14px;margin-top:auto;">How To Restore</a>
+        </div>
+
+        <div class="feature-card fade-in" style="text-align:center;">
+          <span class="feature-card__icon">🐛</span>
+          <h3 class="feature-card__title">Report a Bug</h3>
+          <p class="feature-card__desc">Found something broken? Tell us exactly what happened and we'll fix it fast.</p>
+          <br/>
+          <a href="#contact" class="btn btn--outline" style="padding:10px 20px;font-size:14px;margin-top:auto;">Report Issue</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══ -->
+  <section class="section" id="faq" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);transition:background var(--transition),border-color var(--transition);">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <span class="badge">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Tap a question to expand the answer.</p>
+      </div>
+
+      <div class="faq__list fade-in">
+
+        <div class="faq__item">
+          <button class="faq__question">The app is crashing — what should I do? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            First, try closing the app completely and reopening it. If it keeps crashing:
+            <ol style="margin:10px 0 0 20px;">
+              <li>Go to your phone's Settings → Apps → Math Drill → Clear Cache</li>
+              <li>Restart your phone</li>
+              <li>If the issue persists, uninstall and reinstall the app from Google Play (your data may be lost)</li>
+              <li>If it still crashes, email us with your phone model and Android version</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="faq__item" id="restore">
+          <button class="faq__question">How do I restore my Pro purchase? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            Open Math Drill → go to the <strong>Stats tab</strong> → tap <strong>"Upgrade to Pro"</strong>. On the upgrade screen, scroll down and tap <strong>"Restore Purchase"</strong>. Make sure you are signed in to the same Google account you used when you originally purchased Pro. Restore is free and unlimited.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">I bought Pro but ads are still showing — help! <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            This can happen if the purchase confirmation was delayed. Try the following:
+            <ol style="margin:10px 0 0 20px;">
+              <li>Close the app fully and reopen it</li>
+              <li>Go to Stats → Upgrade → "Restore Purchase" to re-confirm your purchase</li>
+              <li>Make sure you have an internet connection when restoring</li>
+            </ol>
+            If ads still appear after restoring, please email us with your order number from Google Play (found in your Google account → Payments).
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">I lost all my progress after reinstalling — can I recover it? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            Unfortunately, progress data is stored locally on your device and is not backed up to any cloud server. When you uninstall the app, this data is deleted. We are planning to add optional backup functionality in a future update. Your <strong>Pro purchase</strong> however can always be restored — it is tied to your Google account, not your device.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">Can I get a refund for the Pro upgrade? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            Google Play allows refund requests within 48 hours of purchase. To request a refund:
+            <ol style="margin:10px 0 0 20px;">
+              <li>Open the Google Play app on your phone</li>
+              <li>Tap your profile icon → "Payments &amp; subscriptions" → "Order history"</li>
+              <li>Find the Math Drill Pro purchase and tap "Request a refund"</li>
+            </ol>
+            After 48 hours, refunds are at Google's discretion. For special circumstances, you can also email us.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">The wrong answer is being marked as correct (or vice versa) — is this a bug? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            We work hard to ensure all answers are accurate, but mistakes can happen — especially in topics like fractions or negative numbers where rounding may vary. If you believe you've found a wrong answer, please email us with the specific question and topic. We'll verify and fix it in the next update.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">How do I change the app language to Hindi? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            Go to the <strong>Settings tab</strong> → scroll to the General section → look for the Language option. Currently English and Hindi are supported. More languages are coming soon.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">How do I suggest a new topic or feature? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            We love suggestions! Email us using the contact form below and describe what you'd like to see. Popular requests get added in future updates. You can also leave a review on Google Play — we read every single one.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">Does the app work on tablets? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">
+            Math Drill is designed for smartphones (portrait mode). It will run on tablets but the layout is optimised for phones. Tablet-optimised layout is on our roadmap.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <span class="badge">Contact</span>
+        <h2>Still need help?</h2>
+        <p>Send us an email and we'll respond within 2 business days. Include your device model and Android version for faster help.</p>
+      </div>
+
+      <div class="contact-card fade-in">
+        <h3>📧 Email Support</h3>
+        <p>For bugs, purchase issues, refund requests, or feature suggestions — we're here.</p>
+        <a href="mailto:morningapplabs@gmail.com" class="contact-card__email">morningapplabs@gmail.com</a>
+        <p style="font-size:13px;color:var(--text-sub);">
+          When emailing about a technical issue, please include:<br/>
+          Phone model • Android version • App version • Description of the problem
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <img src="icon.png" alt="Math Drill" style="width:36px;height:36px;border-radius:10px;object-fit:cover;flex-shrink:0;" />
+            Math Drill
+          </a>
+          <p>A free Android app for daily math practice.</p>
+        </div>
+        <div class="footer__col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#pro">Pro Upgrade</a></li>
+            <li><a href="index.html#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Download</h4>
+          <ul>
+            <li><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Math Drill. All rights reserved.</span>
+        <span><a href="privacy.html">Privacy Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

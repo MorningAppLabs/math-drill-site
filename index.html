@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Drill — Practice Math Daily. Improve Fast.</title>
+  <meta name="description" content="Math Drill is a free app for daily math practice. Improve your speed and accuracy with exercises on multiplication, division, fractions, algebra, geometry, and more." />
+  <meta name="keywords" content="math drill, math practice app, multiplication app, math for students, math quiz, mental math" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://morningapplabs.github.io/math-drill-site/" />
+  <meta property="og:title"       content="Math Drill — Practice Math Daily" />
+  <meta property="og:description" content="Free Android app for daily math practice. Tables, fractions, algebra, geometry and more. Go Pro for ad-free experience and deep analytics." />
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="icon.png" alt="Math Drill" style="width:36px;height:36px;border-radius:10px;object-fit:cover;flex-shrink:0;" />
+        Math Drill
+      </a>
+
+      <ul class="navbar__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#pro">Pro</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+
+      <div class="navbar__right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="#download" class="btn btn--primary" style="padding:10px 20px;font-size:14px;">Download Free</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Left -->
+        <div class="hero__content">
+          <p class="hero__eyebrow">Free on Android</p>
+          <h1 class="hero__title">
+            Practice math.<br />
+            <span>Get faster. Every day.</span>
+          </h1>
+          <p class="hero__subtitle">
+            Math Drill helps students, parents, and math enthusiasts sharpen their skills with
+            daily exercises — from basic tables to algebra, geometry, and beyond.
+          </p>
+          <div class="hero__actions">
+            <a href="#download" class="btn btn--primary btn--lg">
+              ▶ &nbsp;Download Free
+            </a>
+            <a href="#features" class="btn btn--secondary btn--lg">
+              See Features
+            </a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-value">
+                <span data-counter="50" data-suffix="+">50+</span>
+              </div>
+              <div class="hero__stat-label">Math Topics</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">
+                <span data-counter="1000" data-suffix="+">1000+</span>
+              </div>
+              <div class="hero__stat-label">Practice Questions</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">Free</div>
+              <div class="hero__stat-label">To Download</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Phone Mockup -->
+        <div class="hero__visual">
+          <div class="phone-mockup">
+            <div class="phone-mockup__notch"></div>
+            <div class="phone-screen">
+              <div class="phone-screen__header">
+                <span class="phone-screen__title">Math Drill</span>
+                <span class="phone-screen__streak">🔥 7-day streak</span>
+              </div>
+              <div class="phone-card">
+                <div class="phone-label">Today's Progress</div>
+                <div class="phone-bar-track">
+                  <div class="phone-bar" style="width:68%"></div>
+                </div>
+                <div style="font-size:11px;color:var(--text-sub);">17 / 25 completed</div>
+              </div>
+              <div class="phone-question">8 × 7 = ?</div>
+              <div class="phone-grid">
+                <div class="phone-key">48</div>
+                <div class="phone-key">63</div>
+                <div class="phone-key phone-key--primary">56</div>
+                <div class="phone-key">54</div>
+              </div>
+              <div class="phone-card">
+                <div class="phone-label">Score this session</div>
+                <div style="font-size:20px;font-weight:900;color:var(--correct);">92% ✓</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating chips -->
+          <div class="hero__chip hero__chip--1">✓ Instant Feedback</div>
+          <div class="hero__chip hero__chip--2">📊 Deep Analytics</div>
+          <div class="hero__chip hero__chip--3">🔥 Daily Streaks</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FEATURES ═══ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <span class="badge">Features</span>
+        <h2>Everything you need to master math</h2>
+        <p>Built for students from Class 1 to Class 12 and beyond — every feature is designed to make practice effective and enjoyable.</p>
+      </div>
+
+      <div class="features__grid">
+
+        <div class="feature-card fade-in">
+          <span class="feature-card__icon">🎯</span>
+          <h3 class="feature-card__title">Timed Practice</h3>
+          <p class="feature-card__desc">Drill with a timer to build speed. Track how fast you answer and watch yourself improve week after week.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <span class="feature-card__icon">📈</span>
+          <h3 class="feature-card__title">Progress Tracking</h3>
+          <p class="feature-card__desc">See your score history, accuracy trends, and session statistics. Know exactly where you're strong and where to improve.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <span class="feature-card__icon">🔥</span>
+          <h3 class="feature-card__title">Daily Streaks</h3>
+          <p class="feature-card__desc">Build a habit with daily streaks. A reminder system keeps you consistent so you never lose your momentum.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <span class="feature-card__icon">📚</span>
+          <h3 class="feature-card__title">Learn Mode</h3>
+          <p class="feature-card__desc">Not just quizzes — each topic includes visual explanations, formulas, diagrams, and worked examples before you practice.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <span class="feature-card__icon">🎓</span>
+          <h3 class="feature-card__title">Smart Revision</h3>
+          <p class="feature-card__desc">The app identifies topics where you make the most mistakes and schedules them for targeted revision automatically.</p>
+        </div>
+
+        <div class="feature-card fade-in">
+          <span class="feature-card__icon">⚙️</span>
+          <h3 class="feature-card__title">Fully Customisable</h3>
+          <p class="feature-card__desc">Choose difficulty, number of questions, keypad layout, timer display, and more. The app adapts to how you like to study.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TOPICS ════ -->
+  <section class="section" id="topics" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);transition:background var(--transition),border-color var(--transition);">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <span class="badge badge--orange">50+ Topics</span>
+        <h2>From basics to advanced — all covered</h2>
+        <p>Whether you're a beginner learning multiplication tables or a student preparing for board exams, Math Drill has a topic for you.</p>
+      </div>
+
+      <div class="topics__grid">
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">✖️</div><div class="topic-chip__name">Multiplication</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">➗</div><div class="topic-chip__name">Division</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">➕</div><div class="topic-chip__name">Addition</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">➖</div><div class="topic-chip__name">Subtraction</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">½</div><div class="topic-chip__name">Fractions</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">%</div><div class="topic-chip__name">Percentages</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">x²</div><div class="topic-chip__name">Algebra</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">📐</div><div class="topic-chip__name">Geometry</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">√</div><div class="topic-chip__name">Square Roots</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">∛</div><div class="topic-chip__name">Cube Roots</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">📊</div><div class="topic-chip__name">Statistics</div></div>
+        <div class="topic-chip fade-in"><div class="topic-chip__icon">📏</div><div class="topic-chip__name">Mensuration</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PRO ══════ -->
+  <section class="section pro-section" id="pro">
+    <div class="container">
+      <div class="pro__inner">
+
+        <!-- Left: copy -->
+        <div class="pro__left fade-in">
+          <span class="badge">Pro Upgrade</span>
+          <h2>Unlock the full<br/>Math Drill experience</h2>
+          <p>One small payment. Powerful features that make your practice deeper, faster, and completely ad-free — forever.</p>
+
+          <div class="pro__price-row">
+            <span class="pro__price-old">₹198</span>
+            <span class="pro__price">₹99</span>
+            <span class="pro__badge">50% OFF</span>
+          </div>
+          <p class="pro__note">One-time purchase &nbsp;•&nbsp; No subscription &nbsp;•&nbsp; Yours forever</p>
+
+          <br/>
+          <a href="#download" class="btn btn--primary btn--lg" style="margin-top:8px;">
+            ⭐ &nbsp;Get Pro — ₹99
+          </a>
+        </div>
+
+        <!-- Right: feature grid -->
+        <div class="pro__features fade-in">
+
+          <div class="pro__feature">
+            <span class="pro__feature-icon">🚫</span>
+            <div>
+              <div class="pro__feature-title">Ad-Free Experience</div>
+              <div class="pro__feature-desc">Remove all banner and interstitial ads completely.</div>
+            </div>
+          </div>
+
+          <div class="pro__feature">
+            <span class="pro__feature-icon">📊</span>
+            <div>
+              <div class="pro__feature-title">Pro Analytics Dashboard</div>
+              <div class="pro__feature-desc">Heatmaps, accuracy charts, topic breakdown, and deep insights.</div>
+            </div>
+          </div>
+
+          <div class="pro__feature">
+            <span class="pro__feature-icon">📁</span>
+            <div>
+              <div class="pro__feature-title">Detailed Session History</div>
+              <div class="pro__feature-desc">Review every question from every session you've ever done.</div>
+            </div>
+          </div>
+
+          <div class="pro__feature">
+            <span class="pro__feature-icon">📤</span>
+            <div>
+              <div class="pro__feature-title">Export Reports</div>
+              <div class="pro__feature-desc">Download progress reports as PDF to share with teachers or parents.</div>
+            </div>
+          </div>
+
+          <div class="pro__feature">
+            <span class="pro__feature-icon">🎨</span>
+            <div>
+              <div class="pro__feature-title">Premium Themes</div>
+              <div class="pro__feature-desc">10 exclusive colour themes to personalise your app interface.</div>
+            </div>
+          </div>
+
+          <div class="pro__feature">
+            <span class="pro__feature-icon">📌</span>
+            <div>
+              <div class="pro__feature-title">Priority Support</div>
+              <div class="pro__feature-desc">Get faster responses and direct access to our support team.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ DOWNLOAD ═══ -->
+  <section class="section download-section" id="download">
+    <div class="container">
+      <div class="fade-in">
+        <img src="icon.png" alt="Math Drill" class="download__graphic" style="width:80px;height:80px;border-radius:22px;object-fit:cover;display:inline-block;margin-bottom:24px;box-shadow:0 8px 32px rgba(33,150,243,0.30);" />
+        <h2 class="download__title">Download Math Drill</h2>
+        <p class="download__subtitle">Free to download. No account required. Start practising in 60 seconds.</p>
+        <div class="download__buttons">
+          <a href="https://play.google.com/store" class="playstore-btn" id="playstore-link" target="_blank" rel="noopener noreferrer">
+            <span class="playstore-btn__icon">▶</span>
+            <span>
+              <span class="playstore-btn__text-top">GET IT ON</span>
+              <span class="playstore-btn__text-main">Google Play</span>
+            </span>
+          </a>
+        </div>
+        <p class="download__disclaimer">Available on Android. Requires Android 6.0 or higher.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FAQ ══════ -->
+  <section class="section" id="faq" style="background:var(--surface);border-top:1px solid var(--border);transition:background var(--transition),border-color var(--transition);">
+    <div class="container">
+      <div class="section-heading fade-in">
+        <span class="badge">FAQ</span>
+        <h2>Frequently asked questions</h2>
+        <p>Everything you need to know about Math Drill.</p>
+      </div>
+
+      <div class="faq__list fade-in">
+
+        <div class="faq__item">
+          <button class="faq__question">Is Math Drill free to use? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">Yes! Math Drill is completely free to download and use. All topics, practice modes, and progress tracking are available at no cost. A one-time Pro upgrade (₹99) unlocks bonus features like ad-removal, advanced analytics, and premium themes.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">What age group is this app for? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">Math Drill is suitable for Class 1 through Class 12 students, and adults who want to sharpen mental math. You can choose your difficulty level and topic, so it adapts to beginners and advanced learners alike.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">Does it work offline? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">Yes. All practice content works fully offline. Internet is only needed to show ads (for free users) and for in-app purchases. Your progress is saved locally on your device.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">How is the Pro upgrade handled? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">Pro is a one-time in-app purchase of ₹99 processed securely by Google Play. There is no subscription — pay once and keep it forever. If you change phones, use "Restore Purchase" inside the app to unlock Pro again at no cost.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">Can I change the language? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">The app currently supports English and Hindi. Language support for more regional languages is planned for future updates.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">How do I report a bug or suggest a feature? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">Visit our <a href="support.html">Support page</a> and send us an email. We read every message and try to respond within 2 business days.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">Is my data safe? <span class="faq__chevron">⌄</span></button>
+          <div class="faq__answer">Your practice data is stored only on your device — we do not collect or transmit personal data to any server. Read our full <a href="privacy.html">Privacy Policy</a> for all details.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <img src="icon.png" alt="Math Drill" style="width:36px;height:36px;border-radius:10px;object-fit:cover;flex-shrink:0;" />
+            Math Drill
+          </a>
+          <p>A free Android app for daily math practice. Build speed, accuracy and confidence — one drill at a time.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#pro">Pro Upgrade</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="support.html#faq">Help &amp; FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Download</h4>
+          <ul>
+            <li><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Math Drill. All rights reserved.</span>
+        <span>Made with ❤️ for students everywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
