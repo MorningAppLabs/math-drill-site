@@ -937,6 +937,7 @@ img { max-width: 100%; display: block; }
 
 .carousel__viewport {
   flex: 1;
+  min-width: 0;
   overflow: hidden;
   border-radius: 4px;
 }
